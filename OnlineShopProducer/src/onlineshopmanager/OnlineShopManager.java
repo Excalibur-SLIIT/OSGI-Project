@@ -7,7 +7,8 @@ import item.Item;
 public interface OnlineShopManager {
 	public int addItem(String itemName, double itemPrice, double itemDiscountPercentage);
 
-	public int updateItem(String updatedItemName, double updatedItemPrice, double updatedItemDiscountPercentage);
+	public int updateItem(String outdatedItemName, String updatedItemName, double updatedItemPrice,
+			double updatedItemDiscountPercentage);
 
 	public int removeItem(String itemName);
 

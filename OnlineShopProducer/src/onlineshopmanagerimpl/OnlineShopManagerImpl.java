@@ -16,14 +16,15 @@ public class OnlineShopManagerImpl implements OnlineShopManager {
 	}
 
 	@Override
-	public synchronized int updateItem(String updatedItemName, double updatedItemPrice,
+	public synchronized int updateItem(String outdatedItemName, String updatedItemName, double updatedItemPrice,
 			double updatedItemDiscountPercentage) {
+		
 		Item itemOutdated = null;
 		boolean itemFound = false;
 		int count = 0;
 
 		for (Item itemTemp : ItemStorage.itemList) {
-			if (itemTemp.getItemName().equalsIgnoreCase(updatedItemName)) {
+			if (itemTemp.getItemName().equalsIgnoreCase(outdatedItemName)) {
 
 				itemOutdated = itemTemp;
 				itemFound = true;

@@ -4,8 +4,9 @@ Bundle-Name: OnlineShopManagerConsumer
 Bundle-SymbolicName: OnlineShopManagerConsumer
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: onlineshopmanagerconsumer.Activator
-Bundle-RequiredExecutionEnvironment: JavaSE-15
-Automatic-Module-Name: OnlineShopManagerConsumer
+Export-Package: onlineshopmanagerconsumer
 Import-Package: onlineshopmanager,
  org.osgi.framework;version="1.3.0"
-Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Automatic-Module-Name: OnlineShopManagerConsumer
+Require-Bundle: OnlineShopProducer
