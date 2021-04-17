@@ -21,7 +21,7 @@ public class ItemDeliveryImpl implements ItemDelivery {
 	@Override
 	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress,
 			String updatedCustomerOrderDate, List<Item> updatedCustomerItemList) {
-
+		
 		Delivery deliveryOutdated = null;
 		boolean deliveryFound = false;
 		int count = 0;
@@ -50,48 +50,17 @@ public class ItemDeliveryImpl implements ItemDelivery {
 
 	@Override
 	public int removeDelivery(int deliveryId) {
-
-		boolean deliveryFound = false;
-		int count = 0;
-
-		for (Delivery deliveryTemp : ItemStorage.deliveryList) {
-			if (deliveryTemp.getDeliveryId() == deliveryId) {
-
-				deliveryFound = true;
-				break;
-			}
-			count++;
-		}
-		if (deliveryFound) {
-			ItemStorage.deliveryList.remove(count + 1);
-			return 0;
-		} else {
-			return -1;
-		}
+		return 0;
 	}
 
 	@Override
 	public int searchDelivery(String customerName) {
-
-		boolean deliveryFound = false;
-
-		for (Delivery deliveryTemp : ItemStorage.deliveryList) {
-			if (deliveryTemp.getCustomerName().equalsIgnoreCase(customerName)) {
-
-				deliveryFound = true;
-				break;
-			}
-		}
-		if (deliveryFound) {
-			return 0;
-		} else {
-			return -1;
-		}
+		return 0;
 	}
 
 	@Override
 	public List<Delivery> deliveryList() {
-		return ItemStorage.deliveryList;
+		return null;
 	}
 
 }

@@ -1,0 +1,38 @@
+package itemdeliveryimpl;
+
+import java.util.List;
+
+import delivery.Delivery;
+import item.Item;
+import itemdelivery.ItemDelivery;
+
+public class ItemDeliveryImpl implements ItemDelivery {
+
+	@Override
+	public int addDelivery(String customerName, String customerAddress, String customerOrderDate,
+			List<Item> customerItemList) {
+		return 0;
+	}
+
+	@Override
+	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress,
+			String updatedCustomerOrderDate, List<Item> updatedCustomerItemList) {
+		return 0;
+	}
+
+	@Override
+	public int removeDelivery(int deliveryId) {
+		return 0;
+	}
+
+	@Override
+	public int searchDelivery(String customerName) {
+		return 0;
+	}
+
+	@Override
+	public List<Delivery> deliveryList() {
+		return null;
+	}
+
+}

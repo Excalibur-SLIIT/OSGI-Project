@@ -91,7 +91,7 @@ public class ItemDeliveryImpl implements ItemDelivery {
 
 	@Override
 	public List<Delivery> deliveryList() {
-		return ItemStorage.deliveryList;
+		return null;
 	}
 
 }
