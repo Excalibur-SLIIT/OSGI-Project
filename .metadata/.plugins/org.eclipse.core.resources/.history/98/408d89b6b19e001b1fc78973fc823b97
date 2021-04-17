@@ -1,0 +1,18 @@
+package onlineshopproducer;
+
+import java.util.List;
+
+import itemstorage.Item;
+
+public interface ShopProducer {
+	public String addItem(String itemName, double itemPrice, double itemDiscountPercentage);
+
+	public String updateItem(String updatedItemName, double updatedItemPrice, double updatedItemDiscountPercentage);
+
+	public String removeItem(String itemName);
+
+	public String searchItem(String itemName);
+
+	public List<Item> itemList();
+
+}

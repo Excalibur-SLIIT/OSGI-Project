@@ -1,0 +1,5 @@
+package itemdeliveryimpl;
+
+public class ItemDeliveryImpl implements ItemDelivery{
+
+}

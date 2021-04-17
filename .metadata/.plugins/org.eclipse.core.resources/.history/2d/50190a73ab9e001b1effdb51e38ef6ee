@@ -1,0 +1,38 @@
+package onlineshopproducer;
+
+import java.util.List;
+
+public class ItemCheckOutLmpl implements ItemCheckOut {
+	private List<Item> itemList = ItemStorage.itemList;
+	private String[][] billDetails = new String[100][4];
+	private double bill;
+	private int count = 0;
+
+	@Override
+	public List<Item> itemDisplay() {
+		return ItemStorage.itemList;
+	}
+
+	@Override
+	public int billCalculation(int itemId, int itemQuantity) {
+		boolean found = true;
+		Item itemCurrent = null;
+		for (Item itemTemp : itemList) {
+
+		}
+		return 0;
+	}
+
+	@Override
+	public double getFinalBill() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String[][] billDisplay() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

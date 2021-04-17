@@ -1,0 +1,10 @@
+package onlineshopproducer;
+
+public interface ShopProducer {
+	public String addItem(String itemName, double itemPrice);
+	public String updateItem(String updateItemName, double updateItemPrice);
+	public String removeItem(String itemName);
+	public String searchItem(String itemName);
+	public List<Item> itemList();
+
+}

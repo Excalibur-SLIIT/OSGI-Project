@@ -1,0 +1,59 @@
+package onlineshopproducer;
+
+public class Item {
+	private int itemId;
+	private String itemName;
+	private double itemPrice;
+	private double itemDiscount;
+	private double itemPriceFinal;
+
+	public Item(int itemId, String itemName, double itemPrice, double itemDiscount, double itemPriceFinal) {
+		super();
+		this.itemId = itemId;
+		this.itemName = itemName;
+		this.itemPrice = itemPrice;
+		this.itemDiscount = itemDiscount;
+		this.itemPriceFinal = itemPriceFinal;
+	}
+
+	public int getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
+	}
+
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+
+	public double getItemPrice() {
+		return itemPrice;
+	}
+
+	public void setItemPrice(double itemPrice) {
+		this.itemPrice = itemPrice;
+	}
+
+	public double getItemDiscount() {
+		return itemDiscount;
+	}
+
+	public void setItemDiscount(double itemDiscount) {
+		this.itemDiscount = itemDiscount;
+	}
+
+	public double getItemPriceFinal() {
+		return itemPriceFinal;
+	}
+
+	public void setItemPriceFinal(double itemPriceFinal) {
+		this.itemPriceFinal = itemPriceFinal;
+	}
+
+}

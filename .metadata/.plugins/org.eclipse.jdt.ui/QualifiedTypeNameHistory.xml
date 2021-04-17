@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.sym"/>
+    <fullyQualifiedTypeName name="onlineshopproducer.ShopProducerImpl"/>
+    <fullyQualifiedTypeName name="onlineshopproducer.ShopProducer"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="onlineshopproducer.ItemStorage"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.String"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="itemcheckoutimpl.ItemCheckOutImpl"/>
+    <fullyQualifiedTypeName name="itemcheckout.ItemCheckOut"/>
+    <fullyQualifiedTypeName name="org.osgi.framework.ServiceRegistration"/>
+    <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="onlineshopmanager.OnlineShopManager"/>
+    <fullyQualifiedTypeName name="com.sun.tools.classfile.Annotation.element_value"/>
+    <fullyQualifiedTypeName name="item.Item"/>
+    <fullyQualifiedTypeName name="itemdelivery.ItemDelivery"/>
+</qualifiedTypeNameHistroy>

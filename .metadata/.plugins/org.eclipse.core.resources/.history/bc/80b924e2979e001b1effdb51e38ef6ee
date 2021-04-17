@@ -1,0 +1,8 @@
+package onlineshopproducer;
+
+import java.util.ArrayList;
+
+public class ItemStorage {
+	public static List<Item> itemLits = new ArrayList<Item>();
+
+}

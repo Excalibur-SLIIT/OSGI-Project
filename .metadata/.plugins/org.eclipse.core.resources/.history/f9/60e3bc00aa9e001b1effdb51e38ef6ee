@@ -1,0 +1,5 @@
+package onlineshopproducer;
+
+public class ItemCheckOutLmpl implements ItemCheckOut{
+
+}

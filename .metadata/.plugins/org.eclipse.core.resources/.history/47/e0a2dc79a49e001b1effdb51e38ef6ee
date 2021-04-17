@@ -1,0 +1,38 @@
+package onlineshopproducer;
+
+import java.util.List;
+
+public class ShopProducerImpl implements ShopProducer {
+
+	@Override
+	public synchronized String addItem(String itemName, double itemPrice, double itemDiscountPercentage) {
+		Item item = new Item(ItemStorage.itemList.size() + 1, itemName, itemPrice, itemDiscountPercentage);
+		ItemStorage.itemList.add(item);
+		return "Item Added Successfully!";
+	}
+
+	@Override
+	public String updateItem(String updatedItemName, double updatedItemPrice, double updatedItemDiscountPercentage) {
+		// TODO Auto-generated method stub
+		return "Item Updated Successfully!";
+	}
+
+	@Override
+	public String removeItem(String itemName) {
+		// TODO Auto-generated method stub
+		return "Item Removed Successfully!";
+	}
+
+	@Override
+	public String searchItem(String itemName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Item> itemList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

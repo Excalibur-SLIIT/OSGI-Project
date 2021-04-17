@@ -1,0 +1,23 @@
+package onlineshopmanagerconsumer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+import org.osgi.framework.ServiceRegistration;
+
+import com.sun.java_cup.internal.runtime.Scanner;
+
+public class Activator implements BundleActivator {
+	
+	ServiceReference serviceReference;
+	Scanner input = new Scanner(System.in);
+
+	public void start(BundleContext context) throws Exception {
+		
+	}
+
+	public void stop(BundleContext context) throws Exception {
+		
+	}
+
+}

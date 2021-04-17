@@ -1,0 +1,31 @@
+package itemdeliveryimpl;
+
+import itemdelivery.ItemDelivery;
+
+public class ItemDeliveryImpl implements ItemDelivery{
+
+	@Override
+	public int addDelivery(String customerName, String customerAddress) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int removeDelivery(String customerName) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String[][] viewDelivery() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

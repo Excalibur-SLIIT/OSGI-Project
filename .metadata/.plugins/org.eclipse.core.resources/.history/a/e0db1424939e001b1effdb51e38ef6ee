@@ -1,0 +1,11 @@
+package onlineshopproducer;
+
+public class Item {
+	private int itemId;
+	private String itemName;
+	private double itemPrice;
+	private double itemDiscount;
+	private double itemPriceFinal;
+
+
+}
