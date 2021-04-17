@@ -1,0 +1,16 @@
+package delivery;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import item.Item;
+
+public class Delivery {
+	
+	private int deliveryId;
+	private String customerName;
+	private String customerAddress;
+	private String customerOrderDate;
+	private List<Item> customerItemList = new ArrayList<Item>();
+	
+}

@@ -1,0 +1,5 @@
+package itemdelivery;
+
+public interface ItemDelivery {
+
+}

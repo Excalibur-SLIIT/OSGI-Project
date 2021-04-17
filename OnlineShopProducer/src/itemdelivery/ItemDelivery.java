@@ -1,13 +1,21 @@
 package itemdelivery;
 
+import java.util.List;
+
+import delivery.Delivery;
+import item.Item;
+
 public interface ItemDelivery {
+	public int addDelivery(String customerName, String customerAddress, String customerOrderDate,
+			List<Item> customerItemList);
 
-	public int addDelivery(String customerName, String customerAddress);
+	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress,
+			String updatedCustomerOrderDate, List<Item> updatedCustomerItemList);
 
-	public int removeDelivery(String customerName);
+	public int removeDelivery(int deliveryId);
 
-	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress);
+	public int searchDelivery(String customerName);
 
-	public String[][] viewDelivery();
+	public List<Delivery> deliveryList();
 
 }

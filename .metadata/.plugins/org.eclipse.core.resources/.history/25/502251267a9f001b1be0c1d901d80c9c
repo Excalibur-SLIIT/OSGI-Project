@@ -1,0 +1,8 @@
+package delivery;
+
+public class Delivery {
+	
+	private String customerName;
+	private String customerAddress;
+
+}

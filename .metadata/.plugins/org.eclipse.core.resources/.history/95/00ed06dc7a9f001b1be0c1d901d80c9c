@@ -1,0 +1,10 @@
+package itemdelivery;
+
+import java.util.List;
+
+import item.Item;
+
+public interface ItemDelivery {
+	public addDelivery(String customerName, String customerAddress, String customerOrderDate,List<Item> customerItemList);
+
+}

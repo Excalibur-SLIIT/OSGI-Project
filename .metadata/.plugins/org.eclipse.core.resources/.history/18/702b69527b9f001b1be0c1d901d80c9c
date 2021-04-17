@@ -1,0 +1,7 @@
+package itemdeliveryimpl;
+
+import itemdelivery.ItemDelivery;
+
+public class ItemDeliveryImpl implements ItemDelivery {
+
+}
