@@ -25,8 +25,6 @@ public class Activator implements BundleActivator {
 		OnlineShopManager onlineShopManager = (OnlineShopManager) context.getService(serviceReference);
 
 		do {
-			int option = 0;
-			int reLoop = 1;
 
 			System.out.println("**********Welcome To Online Shop Item Management**********");
 
@@ -40,8 +38,6 @@ public class Activator implements BundleActivator {
 
 			System.out.println("Enter respective option number: ");
 			option = userInput.nextInt();
-
-			
 
 			switch (option) {
 

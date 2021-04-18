@@ -8,9 +8,11 @@ import itemstorage.ItemStorage;
 
 public class ItemCheckOutImpl implements ItemCheckOut {
 	private List<Item> itemList = ItemStorage.itemList;
-	private String[][] billDetails = new String[100][4];
+	private String[][] billDetails = new String[10000][4];
 	private double bill;
 	private int count = 0;
+	boolean found = false;
+	Item itemCurrent = null;
 
 	@Override
 	public List<Item> itemDisplay() {
@@ -19,25 +21,24 @@ public class ItemCheckOutImpl implements ItemCheckOut {
 
 	@Override
 	public int billCalculation(int itemId, int itemQuantity) {
-		boolean found = true;
-		Item itemCurrent = null;
 		for (Item itemTemp : itemList) {
 			if (itemId == itemTemp.getItemId()) {
 				itemCurrent = itemTemp;
-				found = false;
+				found = true;
 				break;
 			}
 			count++;
 		}
-		if (!found) {
+		if (found) {
 			this.bill = this.bill + (itemCurrent.getItemPriceFinal() * itemQuantity);
 
 			billDetails[count][0] = Integer.toString(itemId);
 			billDetails[count][1] = itemCurrent.getItemName();
 			billDetails[count][2] = Integer.toString(itemQuantity);
 			billDetails[count][3] = Double.toString(itemCurrent.getItemPriceFinal() * itemQuantity);
+			found = false;
 		}
-		return 0;
+		return 1;
 	}
 
 	@Override

@@ -18,4 +18,8 @@ public interface ItemDelivery {
 
 	public List<Delivery> deliveryList();
 
+	public List<Item> itemList();
+
+	public List<Item> collectList();
+
 }

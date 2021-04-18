@@ -9,18 +9,19 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="itemcheckoutimpl.ItemCheckOutImpl"/>
-    <fullyQualifiedTypeName name="itemcheckout.ItemCheckOut"/>
     <fullyQualifiedTypeName name="org.osgi.framework.ServiceRegistration"/>
-    <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="onlineshopmanager.OnlineShopManager"/>
     <fullyQualifiedTypeName name="com.sun.tools.classfile.Annotation.element_value"/>
-    <fullyQualifiedTypeName name="itemdelivery.ItemDelivery"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="delivery.Delivery"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="itemcheckout.ItemCheckOut"/>
+    <fullyQualifiedTypeName name="itemstorage.ItemStorage"/>
+    <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+    <fullyQualifiedTypeName name="itemdelivery.ItemDelivery"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="item.Item"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
