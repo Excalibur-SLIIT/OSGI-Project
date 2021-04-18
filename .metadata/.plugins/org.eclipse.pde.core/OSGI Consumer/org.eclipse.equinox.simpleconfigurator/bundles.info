@@ -1,5 +1,6 @@
 #encoding=UTF-8
 #version=1
+OnlineShopDeliveryConsumer,1.0.0.qualifier,file:/D:/Projects/Eclipse/OSGI%20Project/OSGI%20Project/OnlineShopDeliveryConsumer/,4,true
 OnlineShopManagerConsumer,1.0.0.qualifier,file:/D:/Projects/Eclipse/OSGI%20Project/OSGI%20Project/OnlineShopManagerConsumer/,4,true
 OnlineShopProducer,1.0.0.qualifier,file:/D:/Projects/Eclipse/OSGI%20Project/OSGI%20Project/OnlineShopProducer/,4,true
 ch.qos.logback.classic,1.2.3.v20200428-2012,file:/C:/Users/mbnuw/.p2/pool/plugins/ch.qos.logback.classic_1.2.3.v20200428-2012.jar,4,true

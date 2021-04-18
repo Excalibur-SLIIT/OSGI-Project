@@ -575,6 +575,7 @@
         <setEntry value="org.w3c.dom.svg@default:default"/>
     </setAttribute>
     <setAttribute key="selected_workspace_bundles">
+        <setEntry value="OnlineShopDeliveryConsumer@default:default"/>
         <setEntry value="OnlineShopManagerConsumer@default:default"/>
         <setEntry value="OnlineShopProducer@default:default"/>
     </setAttribute>

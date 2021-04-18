@@ -9,7 +9,7 @@ public interface ItemDelivery {
 	public int addDelivery(String customerName, String customerAddress, String customerOrderDate,
 			List<Item> customerItemList);
 
-	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress,
+	public int updateDelivery(String outdatedCustomerName, String updatedCustomerName, String updatedCustomerAddress,
 			String updatedCustomerOrderDate, List<Item> updatedCustomerItemList);
 
 	public int removeDelivery(int deliveryId);

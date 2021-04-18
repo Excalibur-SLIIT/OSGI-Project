@@ -19,21 +19,21 @@ public class ItemDeliveryImpl implements ItemDelivery {
 	}
 
 	@Override
-	public int updateDelivery(String updatedCustomerName, String updatedCustomerAddress,
+	public int updateDelivery(String outdatedCustomerName, String updatedCustomerName, String updatedCustomerAddress,
 			String updatedCustomerOrderDate, List<Item> updatedCustomerItemList) {
 
 		Delivery deliveryOutdated = null;
 		boolean deliveryFound = false;
-		int count = 0;
+		int count = -1;
 
 		for (Delivery deliveryTemp : ItemStorage.deliveryList) {
-			if (deliveryTemp.getCustomerName().equalsIgnoreCase(updatedCustomerName)) {
+			count++;
+			if (deliveryTemp.getCustomerName().equalsIgnoreCase(outdatedCustomerName)) {
 
 				deliveryOutdated = deliveryTemp;
 				deliveryFound = true;
 				break;
 			}
-			count++;
 		}
 		if (deliveryFound) {
 			deliveryOutdated.setCustomerName(updatedCustomerName);
@@ -41,7 +41,7 @@ public class ItemDeliveryImpl implements ItemDelivery {
 			deliveryOutdated.setCustomerOrderDate(updatedCustomerOrderDate);
 			deliveryOutdated.setCustomerItemList(updatedCustomerItemList);
 
-			ItemStorage.deliveryList.set(count + 1, deliveryOutdated);
+			ItemStorage.deliveryList.set(count, deliveryOutdated);
 			return 0;
 		} else {
 			return -1;
@@ -52,15 +52,15 @@ public class ItemDeliveryImpl implements ItemDelivery {
 	public int removeDelivery(int deliveryId) {
 
 		boolean deliveryFound = false;
-		int count = 0;
+		int count = -1;
 
 		for (Delivery deliveryTemp : ItemStorage.deliveryList) {
+			count++;
 			if (deliveryTemp.getDeliveryId() == deliveryId) {
 
 				deliveryFound = true;
 				break;
 			}
-			count++;
 		}
 		if (deliveryFound) {
 			ItemStorage.deliveryList.remove(count + 1);

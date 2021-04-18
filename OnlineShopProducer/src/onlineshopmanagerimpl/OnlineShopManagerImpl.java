@@ -18,26 +18,26 @@ public class OnlineShopManagerImpl implements OnlineShopManager {
 	@Override
 	public synchronized int updateItem(String outdatedItemName, String updatedItemName, double updatedItemPrice,
 			double updatedItemDiscountPercentage) {
-		
+
 		Item itemOutdated = null;
 		boolean itemFound = false;
-		int count = 0;
+		int count = -1;
 
 		for (Item itemTemp : ItemStorage.itemList) {
+			count++;
 			if (itemTemp.getItemName().equalsIgnoreCase(outdatedItemName)) {
 
 				itemOutdated = itemTemp;
 				itemFound = true;
 				break;
 			}
-			count++;
 		}
 		if (itemFound) {
 			itemOutdated.setItemName(updatedItemName);
 			itemOutdated.setItemPrice(updatedItemPrice);
 			itemOutdated.setItemDiscountPercentage(updatedItemDiscountPercentage);
 
-			ItemStorage.itemList.set(count + 1, itemOutdated);
+			ItemStorage.itemList.set(count, itemOutdated);
 			return 0;
 		} else {
 			return -1;
@@ -47,18 +47,18 @@ public class OnlineShopManagerImpl implements OnlineShopManager {
 	@Override
 	public int removeItem(String itemName) {
 		boolean itemFound = false;
-		int count = 0;
+		int count = -1;
 
 		for (Item itemTemp : ItemStorage.itemList) {
+			count++;
 			if (itemTemp.getItemName().equalsIgnoreCase(itemName)) {
 
 				itemFound = true;
 				break;
 			}
-			count++;
 		}
 		if (itemFound) {
-			ItemStorage.itemList.remove(count + 1);
+			ItemStorage.itemList.remove(count);
 			return 0;
 		} else {
 			return -1;
