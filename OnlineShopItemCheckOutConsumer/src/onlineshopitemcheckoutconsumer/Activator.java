@@ -101,6 +101,7 @@ public class Activator implements BundleActivator {
 						for (int b = 0; b < 4; b++) {
 							System.out.printf(format, bill[a][b]);
 						}
+						System.out.println("");
 					}
 					System.out.println("Total Amount: " + itemCheckOut.getFinalBill());
 					count = -1;

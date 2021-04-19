@@ -10,8 +10,8 @@ public class ItemCheckOutImpl implements ItemCheckOut {
 	private List<Item> itemList = ItemStorage.itemList;
 	private String[][] billDetails = new String[10000][4];
 	private double bill;
-	private int count = 0;
-	boolean found = false;
+	private int count = -1;
+	boolean found;
 	Item itemCurrent = null;
 
 	@Override
@@ -21,13 +21,16 @@ public class ItemCheckOutImpl implements ItemCheckOut {
 
 	@Override
 	public int billCalculation(int itemId, int itemQuantity) {
+
+		found = false;
+
 		for (Item itemTemp : itemList) {
 			if (itemId == itemTemp.getItemId()) {
 				itemCurrent = itemTemp;
 				found = true;
+				count++;
 				break;
 			}
-			count++;
 		}
 		if (found) {
 			this.bill = this.bill + (itemCurrent.getItemPriceFinal() * itemQuantity);
@@ -36,9 +39,12 @@ public class ItemCheckOutImpl implements ItemCheckOut {
 			billDetails[count][1] = itemCurrent.getItemName();
 			billDetails[count][2] = Integer.toString(itemQuantity);
 			billDetails[count][3] = Double.toString(itemCurrent.getItemPriceFinal() * itemQuantity);
-			found = false;
+
+			return 1;
+		} else {
+			return -1;
 		}
-		return 1;
+
 	}
 
 	@Override
